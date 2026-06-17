@@ -10,33 +10,35 @@ let changeColorButton = document.querySelector(".change-color");
 let endGameButton = document.querySelector(".end-game");
 let updateScoreButton = document.querySelector(".update-score");
 let growButton = document.querySelector(".grow");
+let endButton = document.querySelector(".end");
 
-/* 1. When jump button is clicked, Mario jumps and coin disappears.  
+endButton.addEventListener("click", function() {
+    console.log("END IT");
+    bodyTag.style.display = "none";
+});
+//1. When jump button is clicked, Mario jumps and coin disappears.  
 
-________.addEventListener("click", function() {
-    mario.style.bottom = "120px";
-    coin.style.display = "none";
+jumpButton.addEventListener("click", function () {   
+  mario.style.bottom = "120px";
+   coin.style.display = "none";
 });
 
-*/
 
 
-/* 2. When jump down button is clicked, Mario jumps down. 
+ //2. When jump down button is clicked, Mario jumps down. 
 
-________.addEventListener("click", function() {
-    mario.style = "bottom: 35px";
+jumpDownButton.addEventListener("click", function() {
+   mario.style = "bottom: 35px";
 });
 
-*/
 
+ //3. When change color button is clicked, background color changes. 
 
-/* 3. When change color button is clicked, background color changes. 
-
-________.addEventListener("click", function() {
+changeColorButton.addEventListener("click", function() {
     background.style.backgroundColor = "springGreen"; // you can change the color to something different
 });
 
-*/
+
 
 
 /* 4. When end game button is clicked, the title of the page says game over. 
